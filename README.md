@@ -2,8 +2,8 @@
 
 ## Todo
 
-- [ ] Deploy
-- [ ] Scafford UI with mock data
+- [x] Deploy
+- [x] Scafford UI with mock data
 - [ ] Attach database to UI
 - [ ] Add Auth
 - [ ] Error management
