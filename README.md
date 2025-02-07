@@ -1,6 +1,6 @@
 # Tymon Gallery
 
-## Todo
+## Todo
 
 - [ ] Deploy
 - [ ] Scafford UI with mock data
