@@ -8,6 +8,8 @@
 - [x] Actual DB with Vercel
 - [x] Attach database to UI
 - [ ] Add Auth
+- [ ] Add image upload
+- [ ] Add "taint" (server)
 - [ ] Error management
 - [ ] Routing/image page (parallel routing)
 - [ ] Server Actions "Delete"
