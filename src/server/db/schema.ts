@@ -10,7 +10,7 @@ import { integer, pgTableCreator, timestamp, uuid } from "drizzle-orm/pg-core";
  *
  * @see https://orm.drizzle.team/docs/goodies#multi-project-schema
  */
-export const createTable = pgTableCreator((name) => `tymon-perudo${name}`);
+export const createTable = pgTableCreator((name) => `tymon-perudo_${name}`);
 
 export const tournaments = createTable("tournaments", {
   id: uuid("tournamentId").primaryKey(),
