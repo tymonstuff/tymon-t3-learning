@@ -7,6 +7,7 @@ import { tournaments } from "~/server/db/schema";
 
 const createTournamentSchema = z.object({
   tournamentId: z.string().uuid(),
+  name: z.string(),
   rounds: z.coerce.number().min(1),
   tables: z.coerce.number().min(1),
 });
@@ -19,6 +20,7 @@ export async function createTournament(formData: FormData): Promise<void> {
   try {
     await db.insert(tournaments).values({
       id: tournamentConfig.tournamentId,
+      name: tournamentConfig.name,
       rounds: tournamentConfig.rounds,
       tables: tournamentConfig.tables,
     });
