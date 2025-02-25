@@ -64,22 +64,32 @@ export function CreateTournamentDialog() {
         <form action={handleOnSubmit}>
           <div className="grid w-full items-center gap-3">
             <div>
-              <Label htmlFor="game-round-total-input">Number of Rounds</Label>
+              <Label htmlFor="tournament-name">Tournament Name</Label>
+              <Input
+                name="name"
+                type="text"
+                id="tournament-name"
+                placeholder="Perudo World Championship"
+                required
+              />
+            </div>
+            <div>
+              <Label htmlFor="tournament-rounds">Number of Rounds</Label>
               <Input
                 name="rounds"
                 type="number"
-                id="game-round-total-input"
+                id="tournament-rounds"
                 min={MIN_ROUND_COUNT}
                 placeholder={MIN_ROUND_COUNT.toString()}
                 required
               />
             </div>
             <div>
-              <Label htmlFor="game-table-total-input">Number of Tables</Label>
+              <Label htmlFor="tournament-table-count">Number of Tables</Label>
               <Input
                 name="tables"
                 type="number"
-                id="game-table-total-input"
+                id="tournament-table-count"
                 min={MIN_TABLE_COUNT}
                 placeholder={MIN_TABLE_COUNT.toString()}
                 required
