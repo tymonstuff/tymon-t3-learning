@@ -3,10 +3,12 @@
 ## Admin
 
 - [ ] Create a UI skeleton of the admin dashboard
-  - [ ] Create a new game dialog
-    - [ ] Generate a tournament code
+  - [x] Create a new game dialog
+    - [x] Generate a tournament code
     - [x] Input number of rounds
     - [x] Input number of tables
+    - [x] Add tournaments to DB
+    - [x] Delete tournaments
   - [ ] View players that joined tournament
   - [ ] Open & Close tournament (can or can't join)
   - [ ] Start round, next round.
